@@ -1,0 +1,80 @@
+@font-face {
+    font-family: DS-DIFIB;
+    src: url(DS-DIGIB.TTF);
+}
+
+
+/* Mixin's */
+
+@Mixin transition {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin corners ($radius) {
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+    -khtml-border-radius: $radius;
+}
+
+body {
+    background: url(runnn.png);
+    background-size: cover;
+    font-family: 'DS-DIFIB';
+    height: 100%;
+}
+
+.wrapper {
+    width: 800px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+h2,
+h3 {
+    font-weight: 200;
+    font-size: 5em;
+    text-transform: uppercase;
+    color: rgb(17, 17, 14);
+}
+
+#seconds,
+#tens {
+    font-size: 10em;
+    color: black;
+}
+
+button {
+    color: white;
+    border: solid 2px white;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 18px 10px;
+    width: 180px;
+    margin: 10px;
+    outline: none;
+}
+
+#button-start {
+    border-radius: 30%;
+    background-color: green;
+    border: 5px solid white;
+}
+
+#button-stop {
+    border: 4px white;
+    background-color: red;
+    display: inline-block;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+
+#button-reset {
+    border: 4px solid white;
+    border-radius: 30%;
+    background-color: blue;
+}
